@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>component library</title>
+<link href="styles.css" rel="stylesheet" >
 </head>
 <body>
     <h1>This is my component library</h1>
-    <p>This is a paragraph </p>
-    <p> This is again a paragraph</p>
+    <p>This is a paragraph. Some letters are <strong>bold</strong> in it </p>
+    <p> This is also again a paragraph</p>
 
     <hr>
 
@@ -20,34 +21,38 @@
     <p>This is normal text wrote using paragraph tag</p>
     <small>This is smaller text</small>
     <hr>
-    <h2>@conatainers</h2>
+    <h2>@containers</h2>
     <h3>@Fluid containers</h3>
-    <div>This container is going to be a of full width</div>
+    <div class ="container-fluid">
+        This container is going to be a of full width</div>
     <h3>@centre conatiner</h3>
-    <div>This conatiner is going to be in center</div>
+    <div class ="container-centre">
+        This conatiner is going to be in center</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href='/'>primary link</a>
-    <a href='/'>secondary link</a>
+    <a class= "primary-link" href='/'>primary link</a>
+    <a class= "secondary-link" href='/'>secondary link</a>
 
     <hr>
 
     <h3>@unorderd lists</h3>
-    <ul>
+    <ul class="unordered-list">
         <li>milk</li>
         <li>bread</li>
         <li>jam</li>
     </ul>
 
     <h3>@inline lists</h3>
-    <inline>item one</inline>
-    <inline>item two</inline>
-    <inline>item three</inline>
+    <ul class="inline-list">
+        <inline>milk</inline>
+        <inline>bread</inline>
+        <inline>butter</inline>
+    </ul>
 
     <h3>@reverse ordered lists</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>bread</li>
         <li>jam</li>
@@ -57,46 +62,56 @@
 
     <h2>@nav</h2>
     <p>Navigation is used to get to different pages of a website</p>
-    <div>THe braned name</div>
-    <ul>
-        <li>
-            <a href= "/">home</a>
-            </li>
+    <nav class ="navigation">       
+        <div class ="brand">THe brand name</div>
+        <ul>
             <li>
-            <a href = "/">blog</a>
+                <a href= "/"class="active">home</a>
+                </li>
+                <li>
+                <a href = "/">blog</a>
+                </li>
+                <li>
+                <a href="/">about</a>
             </li>
-            <li>
-            <a href="/">about</a>
-        </li>
-    </ul>
-
+        </ul>
+    </nav>
     <hr>
 
     <h2>@header</h2>
-    <img src="image.svg"/>
-    <h1>this is heading h1 inside header</h1>
+
+    <header class="container hero">
+        <img src="images/image.svg"/>
+        <h1>this is heading h1 inside header</h1>
+    </header>    
 
     <hr>
 
     <h2>@section</h2>
-    <div>A section is used to separate pages.</div>
-    <h2>@normal section</h2>
-    <h2>heading inside section</h2>
-    <p>text definig this section and many other things</p>
-    <a href ="/">Primary button</a>
-    <h2>@off white section</h2>
-    <p>text and other things</p>
-    <a href= "/">Primary button</a>
+    <section class="section">
+        <div>A section is used to separate pages.</div>
+        <h2>@normal section</h2>
+        <h2>heading inside section</h2>
+        <p>text definig this section and many other things</p>
+        <a class="primary-link" href ="/">Primary button</a>
+    </section> 
+    <section class="section ow">  
+        <h2>@off white section</h2>
+        <p>text and other things</p>
+        <a class ="primary-link"href= "/">Primary button</a>
+    </section>
 
     <hr>
 
     <h2>@footer</h2>
-    <p>header inside footer</p>
-    <ul>
-        <li>social one</li>
-        <li>social 2</li>
-        <li>social 3</li>
-    </ul>
-
+    <footer class="footer container-fluid">
+        <div class="container">
+            <div class="heading">header inside footer</p>
+            <ul>
+                <inline>social one</inline>
+                <inline>social 2</inline>
+                <inline>social 3</inline>
+        </div>    </ul>
+    </footer>
 </body>
 </html>
